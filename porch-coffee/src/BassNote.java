@@ -22,4 +22,16 @@ public class BassNote {
     public String toString(){
         return fret + " fret " + openString + " string: " + note;
     }
+
+    public String getOpenString(){
+        return openString;
+    }
+
+    public int getFret(){
+        return fret;
+    }
+
+    public String getNote(){
+        return note;
+    }
 }
