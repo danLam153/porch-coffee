@@ -2,6 +2,14 @@ public class BassNote {
     private String openString;
     private int fret;
     private String note;
+
+    public BassNote(){
+        String tuning = "EADG";
+        int rand = (int)(Math.random()*tuning.length());
+        openString = tuning.substring(rand, rand+1);
+        fret = (int)(Math.random()*12);
+        note = calcNote();
+    }
     
     public BassNote(String op, int fr){
         openString = op;
